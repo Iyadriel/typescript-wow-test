@@ -1,1 +1,1 @@
-declare function LibStub<T extends {}>(lib: string): T
+declare function LibStub<T extends {}>(lib: string): T;

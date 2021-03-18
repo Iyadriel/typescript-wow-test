@@ -7,11 +7,15 @@
         "moduleResolution": "node",
         "rootDir": ".",
         "typeRoots": [
-            "node_modules/@wartoshika/wow-declarations",
+            "node_modules/@wartoshika",
             "./types"
         ],
         "strict": true
     },
+    "include": [
+        "./**/*.ts",
+        ".eslintrc.js"
+    ],
     "tstl": {
         "luaTarget": "5.1",
         "noImplicitSelf": true,

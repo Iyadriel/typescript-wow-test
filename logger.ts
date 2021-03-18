@@ -1,24 +1,24 @@
-import { ChatFrame } from "@wartoshika/wow-declarations";
+type ChatFrame = WoWAPI.ChatFrame;
 
 declare const DEFAULT_CHAT_FRAME: ChatFrame;
 declare let TestTypescript: AceAddon;
 
 // TODO pick up on chat frames being added/removed
-function findDebugFrame(): ChatFrame | void {
+function findDebugFrame(): ChatFrame | undefined {
     for (let i = 1; i < NUM_CHAT_WINDOWS; i++) {
-        const chatFrame = _G[`ChatFrame${i}`]
+        const chatFrame = _G[`ChatFrame${i}`];
         if (chatFrame.name === 'Debug') {
-            return chatFrame
+            return chatFrame;
         }
     }
+    return undefined;
 }
 
-const debugFrame = findDebugFrame() || DEFAULT_CHAT_FRAME
+const debugFrame = findDebugFrame() || DEFAULT_CHAT_FRAME;
 
 function debug(...args: any[]): void {
-    TestTypescript.Print(debugFrame, ...args)
+    TestTypescript.Print(debugFrame, ...args);
 }
 
-export {
-    debug
-};
+// eslint-disable-next-line import/prefer-default-export
+export { debug };

@@ -1,4 +1,4 @@
-interface Library { }
+interface Library {}
 
 interface AceAddon {
     name: string;
