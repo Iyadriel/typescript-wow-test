@@ -5,6 +5,7 @@
             "esnext"
         ],
         "moduleResolution": "node",
+        "rootDir": ".",
         "typeRoots": [
             "node_modules/@wartoshika/wow-declarations",
             "./types"
