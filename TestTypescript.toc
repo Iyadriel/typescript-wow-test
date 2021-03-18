@@ -1,0 +1,9 @@
+## Interface: 90005
+## Title: Test Typescript
+## Author: Iyadriel
+## Version: 0.0.1
+## Notes: Typescript test
+
+embeds.xml
+
+dist/bundle.lua

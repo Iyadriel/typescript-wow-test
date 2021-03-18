@@ -1,0 +1,21 @@
+{
+    "name": "typescript-wow-test",
+    "version": "0.0.1",
+    "private": true,
+    "description": "Typescript WoW addon test",
+    "main": "main.ts",
+    "scripts": {
+        "build": "tstl",
+        "dev": "tstl --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Iyadriel/typescript-wow-test.git"
+    },
+    "author": "Iyadriel",
+    "devDependencies": {
+        "@wartoshika/wow-declarations": "^8.3.0-release.1",
+        "lua-types": "^2.8.0",
+        "typescript-to-lua": "^0.39.0"
+    }
+}
