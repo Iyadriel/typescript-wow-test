@@ -1,7 +1,6 @@
 type ChatFrame = WoWAPI.ChatFrame;
 
 declare const DEFAULT_CHAT_FRAME: ChatFrame;
-declare let TestTypescript: AceAddon;
 
 // TODO pick up on chat frames being added/removed
 function findDebugFrame(): ChatFrame | undefined {
